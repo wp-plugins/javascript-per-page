@@ -71,5 +71,9 @@ N/A
 
 == Changelog ==
 
+* 1.0.1 Minor bug fixes
+ - Loop bug when no scripts defined
+ - Incorrect setting name caused ios and ie scripts not to show
+
 * 1.0 Initial version
  - Code base copied from [Stylesheet Per Page](http://wordpress.org/plugins/stylesheet-per-page/) plugin and adjusted for Javascript

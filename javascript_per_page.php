@@ -7,7 +7,7 @@
 * Author: Josh Kohlbach
 * Author URI: http://www.codemyownroad.com
 * Plugin URI: http://www.codemyownroad.com/products/javascript-per-page-wordpress-plugin/ 
-* Version: 1.0
+* Version: 1.0.1
 */
 
 
@@ -84,7 +84,7 @@ function addCustomJavascripts($javascripts) {
 	if (!is_array($javascripts)) {
 		addCustomJS($javascripts, 'page-');
 	} else {
-		foreach ($stylesheets as $jsName) {
+		foreach ($javascripts as $jsName) {
 			addCustomJS($jsName,(is_page() ? 'page-' : '')); 
 		}
 	}
@@ -196,11 +196,11 @@ function javascriptPerPage() {
 	
 	$javascriptPerPage = get_option('javascriptPerPage');
 	
-	if (!is_admin() && $javascriptPerPage['add_ie_stylesheets'] == 'on'){
+	if (!is_admin() && $javascriptPerPage['add_ie_javascripts'] == 'on'){
 		addIEJavascripts();
 	}
 	
-	if (!is_admin() && $javascriptPerPage['add_ios_stylesheet'] == 'on'){
+	if (!is_admin() && $javascriptPerPage['add_ios_javascript'] == 'on'){
 		addIosJavascript();
 	}
 }
