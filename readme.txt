@@ -3,7 +3,7 @@ Contributors: jkohlbach
 Donate link: http://www.codemyownroad.com
 Tags: javascript, javascript per page, ie, ie javascript, ios javascript, ios, post javascript, page javascript, category javascript, tag javascript
 Requires at least: 3.0
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: trunk
 
 Add custom javascript, IE specific javascript and even iOS specific javascript, to any page or post on your Wordpress website.
